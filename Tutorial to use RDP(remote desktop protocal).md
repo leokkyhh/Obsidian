@@ -1,18 +1,18 @@
 # 1. Prerequisite
- Host: Ensure you has a public IP checking by ping from your client `ping [your host ip]`
-Or here [ping]{https://dnschecker.org/ping-ipv4.php}
-Else install [tailscale]{[https://tailscale.com](https://tailscale.com/)} or set up an VPN server which connect both your client and host under same network.
+Host: Ensure you have a public IP by checking from your client with `ping [your host ip]`.
+Or use [ping](https://dnschecker.org/ping-ipv4.php).
+Otherwise, install [Tailscale](https://tailscale.com/) or set up a VPN server to connect both your client and host under the same network.
 
-# 2. Set up your port fowarding
-By enter to your Wifi router administrator website or apps, set port 3389 forwarding to your host ip. You can check by `ipconfig`, it should start by 192.168. On both TCP&UDP connection.
+# 2. Set up your port forwarding
+Go to your WiFi router administrator website or app, and set port 3389 forwarding to your host IP. You can check your host IP by running `ipconfig`; it should start with 192.168. Set forwarding for both TCP & UDP connections.
 
-# 3. Turn on RDP permission on Win
+# 3. Turn on RDP permission on Windows
 
-Open setting -> System -> Remote Desktop. Turn on `remtoe desktop` and `network identification`. Make sure you are administrator else you need to add your current user on `RemoteDesktopUser` down below.
+Open Settings -> System -> Remote Desktop. Turn on `Remote Desktop` and `Network Identification`. Make sure you are an administrator; otherwise, you need to add your current user to `RemoteDesktopUser` below.
 
 # 4. Connect from client
 
-To start from client Window by cmd `mstsc`, type in your pulic ipv4 address or tailscale address and user name. Not reccomand to use online ms account on your host’win, it is a MESS.
+To start from a Windows client, open cmd and run `mstsc`, then enter your public IPv4 address or Tailscale address and username. It is not recommended to use an online Microsoft account on your host Windows; it is a mess.
 
- On linux, install `xfce4` and `xrdp`, recommend to use kde desktop for smoother connection. Refer this [link]{https://learn.microsoft.com/en-us/azure/virtual-machines/linux/use-remote-desktop?tabs=azure-cli}
+On Linux, install `xfce4` and `xrdp`. It is recommended to use KDE desktop for a smoother connection. Refer to this [link](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/use-remote-desktop?tabs=azure-cli).
 And you should be all done.
