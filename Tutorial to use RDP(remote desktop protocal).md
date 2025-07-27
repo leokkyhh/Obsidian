@@ -1,6 +1,6 @@
 # 1. Prerequisite
  Host: Ensure you has a public IP checking by ping from your client `ping [your host ip]`
-Or here [ping]{https://dnschecker.org/ping-ipv4.php}
+Or here [ping](https://dnschecker.org/ping-ipv4.php)
 Else install [tailscale](https://tailscale.com) or set up an VPN server which connect both your client and host under same network.
 
 # 2. Set up your port fowarding
