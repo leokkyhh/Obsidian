@@ -1,5 +1,5 @@
 # 1. Prerequisite
-Host: Ensure you have a public IP by checking from your client with `ping [your host ip]`.
+Host: Ensure you have a public IP by checking from your client with ```bash ping [your host ip]`.
 Or use [ping](https://dnschecker.org/ping-ipv4.php).
 Otherwise, install [Tailscale](https://tailscale.com) or set up a VPN server to connect both your client and host under the same network.
 
